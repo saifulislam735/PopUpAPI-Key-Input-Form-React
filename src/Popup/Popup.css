@@ -1,0 +1,115 @@
+.popupBody {
+    width: 500px;
+    height: 260px;
+    border-radius: 10px;
+    border: 1px solid #C5D2D8;
+    background: #FFF;
+
+    padding: 26px 26px 19px;
+}
+
+.popUpTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popUpHead {
+    color: #000;
+    font-size: 16px;
+}
+
+.popUpInput {
+    width: 490px;
+    height: 103px;
+    border-radius: 10px;
+    border: 1px solid #C5D2D8;
+    background: #FFF;
+    color: #290303;
+    font-size: 16px;
+    padding: 11px 0px 0px 11px;
+
+}
+
+textarea::placeholder {
+    padding: 11px 0px 0px 11px;
+    font-size: 14px;
+    color: #C5D2D8;
+    position: absolute;
+    top: 0;
+}
+
+.popUpCopyKeyContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.popUpCopyKey {
+    color: #1F883D;
+    font-size: 14px;
+    text-decoration-line: underline;
+}
+
+.SubmitBtn {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    width: 177px;
+    height: 55px;
+    border-radius: 8px;
+    background: #1F883D;
+}
+
+.SubmitBtn:hover {
+    border: 5px solid rgb(195, 195, 204);
+    /* here configure as your needs */
+    color: rgb(0, 0, 3, .5);
+}
+
+.popUpBottom {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*-------------------------*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
